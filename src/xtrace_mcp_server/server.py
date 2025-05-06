@@ -29,13 +29,13 @@ class XTraceMCPServer(FastMCP):
             return f"Found {len(results)} results for query: {query} in the knowledge base {self.xtrace_connector.knowledge_base_id}."
 
         self.add_tool(
-            name="store",
+            name="xtrace-store",
             description="Store data in the knowledge base.",
             func=store,
         )
-        
+
         self.add_tool(
-            name="search",
+            name="xtrace-search",
             description="Search for the most relevant documents in the knowledge base.",
             func=search,
         )

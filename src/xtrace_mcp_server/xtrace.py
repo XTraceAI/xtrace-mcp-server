@@ -17,7 +17,7 @@ class XTraceConnector:
         self.knowledge_base_id = knowledge_base_id
         embedding = Embedding()
         aes_client = AESClient(AES_key)
-        paillier_client = PaillierClient(512,1024,Homomorphic_key_path)
+        paillier_client = PaillierClient(512,512,Homomorphic_key_path)
         self.retriever = SimpleRetriever(embedding, aes_client, paillier_client, compute)
         self.data_loader = TxtLoader(embedding, aes_client, paillier_client, storage) #could be any data loader
 

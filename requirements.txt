@@ -1,0 +1,13 @@
+boto3
+Flask
+langchain
+langchain_community
+numpy
+openai
+pycryptodome
+pycryptodomex
+Requests
+sentence_transformers
+tqdm
+typing-extensions
+pytest
